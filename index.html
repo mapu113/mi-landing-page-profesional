@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INBIMED</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INBIMED</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.jpg" alt="Mi Logo">
-            </div>
-            <ul class="menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-<main>
+  <!-- ==============================
+       HEADER / NAV
+  ============================== -->
+<header>
+  <div class="container">
+    <nav>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="img/logo.jpg" alt="INBIMED Logo">
+      </div>
+
+      <!-- Toggle para abrir/cerrar menú -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-label">Menú</label>
+
+      <!-- Opciones del menú -->
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- ==============================
+       MAIN CONTENT
+  ============================== -->
+  <main>
     <!-- Sección Hero -->
     <section id="inicio" class="hero">
       <h1>Cuidamos tus equipos, para que tú cuides vidas</h1>
@@ -74,6 +91,9 @@
     </section>
   </main>
 
+  <!-- ==============================
+       FOOTER
+  ============================== -->
   <footer>
     <p>© 2025 INBIMED S.A.S - Todos los derechos reservados</p>
     <div class="social">
@@ -82,5 +102,6 @@
       <a href="https://www.linkedin.com/inbimed">LinkedIn</a>
     </div>
   </footer>
+    <script src="js/js.js"></script>
 </body>
 </html>
